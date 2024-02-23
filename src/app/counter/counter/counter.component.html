@@ -1,0 +1,13 @@
+<div class="w-100 row">
+    <div class="d-flex flex-column justify-content-center align-items-center">
+        <div class="my-3">
+            <app-output [Counter]='Counter'></app-output>
+        </div>
+        <div class="my-3">
+            <app-buttons     (increment)="onIncrement()"
+            (decrement)="onDecrement()"
+            (reset)="onReset()"
+            ></app-buttons>
+        </div>
+    </div>
+</div>
